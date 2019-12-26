@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Raster to Vector</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <span class="button-wrap">
+    <label class="new-button" for="upload-button"> Upload Image
+      <input id="upload-button" type="file">
+    </label>
+  </span>
+
+  <!-- <input id="upload-button" type='file' text="upload image" /> -->
+  <br>
+  <img id="uploaded-image" src="#" alt="your image">
+  <h2 id="upload-heading">Uploaded Image</h2>
+  <canvas id="uploaded-image-canvas"></canvas>
+  <br>
+  <h2 id="grayscale-heading">Grayscale Image</h2>
+  <canvas id="grayscale-image"></canvas>
+  <br>
+  <h2 id="noise-reduced-heading">Noise Reduced Image</h2>
+  <canvas id="noise-reduced-image"></canvas>
+  <br>
+  <h2 id="threshold-heading">Threshold Image (Binary Image)</h2>
+  <canvas id="threshold-image"></canvas>
+  
+  <script src="./js/PhotoData.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
